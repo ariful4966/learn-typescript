@@ -1,3 +1,5 @@
 "use strict";
-const country = "I love Bangladesh";
-console.log(country);
+let playerName;
+playerName = 'Mashrafi';
+playerName = 34;
+console.log(playerName);
