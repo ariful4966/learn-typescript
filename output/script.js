@@ -1,7 +1,9 @@
 "use strict";
-// array
-let fruits = ['apple', 'banana', 'orange', 3, true, {}];
-fruits.push({
-    name: 'Sakib'
-});
-console.log(fruits);
+// object
+let person = {
+    name: 'Mashrafi',
+    age: 35,
+    isCaptain: true
+};
+person.name = "Sakib";
+person;

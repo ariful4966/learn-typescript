@@ -1,9 +1,10 @@
-// array
+// object
 
-let fruits = ['apple', 'banana', 'orange', 3, true, {}];
+let person = {
+    name: 'Mashrafi',
+    age : 35,
+    isCaptain: true
+}
 
-fruits.push({
-    name: 'Sakib'
-})
-
-console.log(fruits);
+person.name = "Sakib"
+person
