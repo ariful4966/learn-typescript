@@ -1,11 +1,6 @@
-let playerName;
+function multiply(a : number, b: number) {
+  return a * b;
+}
 
 
-
-
-
-playerName = 'Mashrafi';
-
-playerName = 34
-
-console.log(playerName);
+console.log(multiply(3, 4));
