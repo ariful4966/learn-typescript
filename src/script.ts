@@ -1,6 +1,9 @@
-function multiply(a : number, b: number) {
-  return a * b;
-}
+// array
 
+let fruits = ['apple', 'banana', 'orange', 3, true, {}];
 
-console.log(multiply(3, 4));
+fruits.push({
+    name: 'Sakib'
+})
+
+console.log(fruits);
