@@ -1,9 +1,5 @@
 "use strict";
-// object
-let person = {
-    name: 'Mashrafi',
-    age: 35,
-    isCaptain: true
+const myFunc = (a, b, c) => {
+    return a + b;
 };
-person.name = "Sakib";
-person;
+myFunc(3, 4);
