@@ -9,3 +9,4 @@
 - [x] Lesson 4 : Explicit & Union Types
 - [x] Lesson 5 : Dynamic Type or Any Types
 - [x] Lesson 6 : How to use Functions
+- [x] Lesson 7 : Type Aliases
