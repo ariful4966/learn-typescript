@@ -1,33 +1,30 @@
-// let add: (x: number, y: number) => number;
+class Player {
+  name: string;
+  age: number;
 
-// add = (a: number, b: number) => {
-//   return a + b;
-// };
+  country: string;
 
-let userDetails: (
-  id: number | string,
-  userInfo: {
-    name: string;
-    age: number;
+
+  constructor(n: string, a:number, c:string){
+    this.name = n;
+    this.age = a;
+    this.country = c;
   }
-) => void;
 
-
-userDetails=(id: number | string, userInfo: {
-  name: string,
-  age: number
-})=>{
-
+  play(){
+    console.log(`${this.name} from ${this.country} is playing!`);
+    
+  }
 }
 
-let calculation: (x: number, y: number, z: string) => number;
 
-calculation = (a: number, b: number, c: string) => {
-  if (c === "add") {
-    return a + b;
-  } else {
-    return a - b;
-  }
-};
+const mashrafi = new Player('Mashrafi', 40, 'Bangladesh')
+const sakib = new Player('Sakib', 38, 'Bangladesh')
 
-console.log(calculation(5, 6, "add"));
+const players: Player[]=[]
+
+players.push(sakib)
+players.push(mashrafi)
+
+
+console.log(players);

@@ -11,3 +11,4 @@
 - [x] Lesson 6 : How to use Functions
 - [x] Lesson 7 : Type Aliases
 - [x] Lesson 8 : Function Signatures
+- [x] Lesson 9 : Working with classess
