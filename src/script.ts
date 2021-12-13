@@ -1,13 +1,33 @@
-type stringOrNum = string | number;
-type userType = { name: string; age: number };
+// let add: (x: number, y: number) => number;
 
-const userDetails = (id: stringOrNum, user: userType) => {
-  console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
+// add = (a: number, b: number) => {
+//   return a + b;
+// };
+
+let userDetails: (
+  id: number | string,
+  userInfo: {
+    name: string;
+    age: number;
+  }
+) => void;
+
+
+userDetails=(id: number | string, userInfo: {
+  name: string,
+  age: number
+})=>{
+
+}
+
+let calculation: (x: number, y: number, z: string) => number;
+
+calculation = (a: number, b: number, c: string) => {
+  if (c === "add") {
+    return a + b;
+  } else {
+    return a - b;
+  }
 };
 
-const sayHello = (user: userType) => {
-  console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} ${user.name}`);
-};
-
-userDetails(1, { name: "Ariful Islam", age: 27 });
-sayHello({ name: "Abdullah Al Zarif", age: 2.3 });
+console.log(calculation(5, 6, "add"));
