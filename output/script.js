@@ -11,7 +11,7 @@ class Player {
 }
 const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
 const sakib = new Player("Sakib", 38, "Bangladesh");
-console.log(sakib.country);
+console.log((sakib.country = "English"));
 const players = [];
 players.push(sakib);
 players.push(mashrafi);
