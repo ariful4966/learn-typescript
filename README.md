@@ -11,3 +11,4 @@
 - [x] Lesson 8 : Function Signatures
 - [x] Lesson 9 : Working with classess
 - [x] Lesson 10 : Access Modifiers
+- [x] Lesson 11 : Module System
