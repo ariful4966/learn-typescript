@@ -1,30 +1,36 @@
-import { Player } from "./classes/Plyear.js";
-import { IsPlayer } from "./interfaces/isPlayer";
+// Generics
+// const addID = <
+//   T extends {
+//     name: string;
+//     age: number;
+//   }
+// >(
+//   obj: T
+// ) => {
+//   let id = Math.floor(Math.random() * 100);
+//   return { ...obj, id };
+// };
 
-let mashrafi: IsPlayer = new Player("Mashrafi", 40, "Bangladesh");
-let sakib: IsPlayer;
+// let user = addID({
+//   name: "Mashrafi",
+//   age: 40,
+//   country: "Bangladesh",
+// });
 
-sakib = new Player("Sakib", 38, "Bangladesh");
+// let user = "Mashrafi";
 
-const players: Player[] = [];
-
-players.push(sakib);
-players.push(mashrafi);
-
-interface RertangleOptions {
-  width: number;
-  length: number;
+// addID(user);
+interface APIResponse<T> {
+  status: number;
+  type: string;
+  data: T;
 }
 
-function drawRectangle(options: RertangleOptions) {
-  let width = options.width;
-  let length = options.length;
-}
-
-let threeDoptions = {
-  width: 30,
-  length: 20,
-  height: 10,
+const response1: APIResponse<object> = {
+  status: 200,
+  type: "good",
+  data: {
+    name: "Test",
+    something: 300,
+  },
 };
-
-drawRectangle(threeDoptions);

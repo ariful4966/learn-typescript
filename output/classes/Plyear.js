@@ -4,7 +4,7 @@ export class Player {
         this.age = age;
         this.country = country;
     }
-    getAge() {
+    getProperty() {
         return this.age;
     }
     play() {

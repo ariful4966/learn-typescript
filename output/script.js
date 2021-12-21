@@ -1,17 +1,21 @@
-import { Player } from "./classes/Plyear.js";
-let mashrafi = new Player("Mashrafi", 40, "Bangladesh");
-let sakib;
-sakib = new Player("Sakib", 38, "Bangladesh");
-const players = [];
-players.push(sakib);
-players.push(mashrafi);
-function drawRectangle(options) {
-    let width = options.width;
-    let length = options.length;
-}
-let threeDoptions = {
-    width: 30,
-    length: 20,
-    height: 10,
+"use strict";
+// Generics
+// const addID = <
+//   T extends {
+//     name: string;
+//     age: number;
+//   }
+// >(
+//   obj: T
+// ) => {
+//   let id = Math.floor(Math.random() * 100);
+//   return { ...obj, id };
+// };
+const response1 = {
+    status: 200,
+    type: "good",
+    data: {
+        name: "Test",
+        something: 300,
+    },
 };
-drawRectangle(threeDoptions);
