@@ -7,7 +7,7 @@ export class Player implements IsPlayer {
     readonly country: string
   ) {}
 
-  getAge() {
+  getProperty() {
     return this.age;
   }
 
