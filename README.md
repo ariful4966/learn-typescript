@@ -15,3 +15,4 @@
 - [x] Lesson 12 : Working with Interfaces
 - [x] Lesson 13 : Working with Generics
 - [x] Lesson 14 : Enum Types
+- [x] Lesson 14 : Tuples

@@ -1,21 +1,7 @@
-//Enums
-enum RType {
-  SUCCESS,
-  FAILURE,
-  UNAUTHENTICATED,
-  FORBIDDEN,
-}
+// TUPLES
 
-interface APIResponse<T> {
-  status: number;
-  type: RType;
-  data: T;
-}
+let a = [3, "hello0", { p: 4 }];
 
-const response1: APIResponse<string> = {
-  status: 200,
-  type: RType.UNAUTHENTICATED,
-  data: "test",
-};
+let b: [number, string, object] = [4, "hello", { t: 1 }];
 
-console.log(response1);
+b.push();
