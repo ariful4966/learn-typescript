@@ -13,4 +13,5 @@
 - [x] Lesson 10 : Access Modifiers
 - [x] Lesson 11 : Module System
 - [x] Lesson 12 : Working with Interfaces
-- [x] Lesson 12 : Working with Generics
+- [x] Lesson 13 : Working with Generics
+- [x] Lesson 14 : Enum Types

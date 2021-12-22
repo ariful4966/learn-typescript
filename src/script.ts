@@ -1,36 +1,21 @@
-// Generics
-// const addID = <
-//   T extends {
-//     name: string;
-//     age: number;
-//   }
-// >(
-//   obj: T
-// ) => {
-//   let id = Math.floor(Math.random() * 100);
-//   return { ...obj, id };
-// };
+//Enums
+enum RType {
+  SUCCESS,
+  FAILURE,
+  UNAUTHENTICATED,
+  FORBIDDEN,
+}
 
-// let user = addID({
-//   name: "Mashrafi",
-//   age: 40,
-//   country: "Bangladesh",
-// });
-
-// let user = "Mashrafi";
-
-// addID(user);
 interface APIResponse<T> {
   status: number;
-  type: string;
+  type: RType;
   data: T;
 }
 
-const response1: APIResponse<object> = {
+const response1: APIResponse<string> = {
   status: 200,
-  type: "good",
-  data: {
-    name: "Test",
-    something: 300,
-  },
+  type: RType.UNAUTHENTICATED,
+  data: "test",
 };
+
+console.log(response1);
